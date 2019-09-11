@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>confirmBuyDialog</class>
+ <widget class="QDialog" name="confirmBuyDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>494</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(64,50,38);font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:14pt;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pay">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>370</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>支付</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>370</y>
+     <width>131</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border: 1px solid rgb(0,83,135);
+    color: rgb(0,83,135);
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: white;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:pressed,QPushButton:enabled:hovor{
+border: 1px solid rgb(40,102,173);
+color: (40,102,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>60</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑,Times,serif</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(64,50,38);font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:14pt;</string>
+   </property>
+   <property name="text">
+    <string>票号：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>110</y>
+     <width>200</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>300</width>
+     <height>300</height>
+    </size>
+   </property>
+   <property name="cursor">
+    <cursorShape>UpArrowCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/image/pay.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

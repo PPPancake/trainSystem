@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1127</width>
+    <height>774</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>1081</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="main">
+     <widget class="QStackedWidget" name="main_widget">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>30</y>
+        <width>911</width>
+        <height>531</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="main_station">
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>110</y>
+          <width>61</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>出发地</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>180</y>
+          <width>71</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>到达地</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>250</y>
+          <width>81</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>出发日期</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="main_start">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>110</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="main_end">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>180</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="main_station_date1">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>250</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+}</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="main_station_findbutton">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>340</y>
+          <width>361</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="main_exchangebutton">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>150</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+    font-family:Arial;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+background:rgb(0,83,135);
+color:white;
+border-radius:4px;</string>
+        </property>
+        <property name="text">
+         <string>换</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="main_trainnum">
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>230</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>日期</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="main_trainnum_date">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>230</y>
+          <width>231</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+}</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="main_trainnum_findbutton">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>330</y>
+          <width>451</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>150</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>车次</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="main_trainnum_edit">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>150</y>
+          <width>361</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="main_find_num">
+       <widget class="QDateEdit" name="find_trainnum_date">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>70</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>日期</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="find_trainnum_edit">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+	font: 10pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>车次</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="find_trainnum_findbutton">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>50</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="find_trainnum_table">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>200</y>
+          <width>631</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView{
+border:1px solid rgb(239,243,245);
+}
+QTableView::item {
+        padding-left: 28px;
+        padding-right: 28px;
+        border: none;
+        font: 14pt &quot;微软雅黑&quot;;
+}
+QTableView::item:selected {
+        color:#000;
+        background-color:rgb(235,243,249);
+	border:none;
+}</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>801</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:17px;</string>
+        </property>
+        <property name="text">
+         <string>D27次列车（动车 有空调），始发站：北京；终到站：哈尔滨西；全程共有7个停靠站：</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="main_find_station">
+       <widget class="QTableView" name="find_station_table">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>871</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView{
+border:1px solid rgb(239,243,245);
+}
+QTableView::item {
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        font: 14pt &quot;微软雅黑&quot;;
+}
+QTableView::item:selected {
+        color:#000;
+        background-color:rgb(235,243,249);
+	border:none;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="find_station_find">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>100</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+        </property>
+        <property name="text">
+         <string>查询</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>出发地</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="find_station_start">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>50</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+	font: 10pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>50</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>到达地</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="find_station_end">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>50</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+	font: 10pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="find_station_exchange">
+        <property name="geometry">
+         <rect>
+          <x>320</x>
+          <y>50</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: none;
+color:rgb(0,83,135);
+    font-family:Arial;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+background:rgba(0,0,0,0);</string>
+        </property>
+        <property name="text">
+         <string>&lt;--交换--&gt;</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_D">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>180</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>D-动车</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_T">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>180</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>T-特快</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>170</y>
+          <width>111</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>列车类型：</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_Z">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>180</y>
+          <width>91</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>Z-直达</string>
+        </property>
+       </widget>
+       <widget class="QTableView" name="station_table">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>260</y>
+          <width>441</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTableView{
+border:1px solid rgb(239,243,245);
+}
+QTableView::item {
+        padding-left: 18px;
+        padding-right: 18px;
+        border: none;
+        font: 14pt &quot;微软雅黑&quot;;
+}
+QTableView::item:selected {
+        color:#000;
+        background-color:rgb(235,243,249);
+	border:none;
+}
+</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>91</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+        </property>
+        <property name="text">
+         <string>出发日期</string>
+        </property>
+       </widget>
+       <widget class="QDateEdit" name="find_station_date1">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>100</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QListWidget" name="main_list">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>241</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+font: 20px &quot;微软雅黑&quot;;
+text-decoration: underline;
+color:rgb(0,83,135);</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>车票查询</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>车次查询</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mine">
+     <widget class="QTableView" name="mine_order_table">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>941</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView {
+        gridline-color: rgb(111, 156, 207);
+border:1px solid rgb(239,243,245);
+}
+QTableView::item {
+        padding-left: 5px;
+        padding-right: 5px;
+        border: none;
+font: 13pt &quot;微软雅黑&quot;;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mine_goIndex">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{border: 1px solid rgb(0,83,135);
+    color: rgb(0,83,135);
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+background-color: white;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:pressed,QPushButton:enabled:hovor{
+border: 1px solid rgb(40,102,173);
+color: (40,102,173);
+}</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>0</y>
+      <width>1171</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/image/back.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_loginbutton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>110</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+    color:white;
+    font-family:Arial;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+background:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>登 录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="main_logoutbutton">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>110</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: none;
+    color:white;
+    font-family:Arial;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+background:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>退 出</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>241</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑,Times,serif</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background:rgba(0,0,0,0);
+color:white;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:18pt;</string>
+    </property>
+    <property name="text">
+     <string>铁 路 售 票 系 统</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>631</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(235,243,249);
+border-radius: 4px;
+padding:20px 30px;
+text-align:center;
+font-size: 20px;
+font: 14pt &quot;微软雅黑&quot;;
+cursor:pointer;</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1127</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

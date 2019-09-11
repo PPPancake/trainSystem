@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SignupDialog</class>
+ <widget class="QDialog" name="SignupDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>612</width>
+    <height>554</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QLineEdit" name="signup_username">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="signup_password">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>140</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>60</y>
+     <width>41</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>姓名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>密 码</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="signup_button">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>480</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 4px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>注 册</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>250</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>确认密码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="signup_confirmpass">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>250</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>330</y>
+     <width>61</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>身份证</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>410</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family:&quot;微软雅黑&quot;, Times, serif;
+font-size:20px;</string>
+   </property>
+   <property name="text">
+    <string>电话号码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="signup_idcard">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>330</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="signup_tele">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>410</y>
+     <width>381</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 2px;
+border: 1px solid rgb(217,217,217);
+background: white;
+font-size:16px;
+	font: 14pt &quot;微软雅黑&quot;;
+padding-left:18px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>10</y>
+     <width>491</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(235,243,249);
+border-radius: 4px;
+padding:20px 30px;
+text-align:center;
+font-size: 20px;
+font: 14pt &quot;微软雅黑&quot;;
+cursor:pointer;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>200</y>
+     <width>401</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>*请设置长度为8-16位且同时含有数字和字母的密码</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

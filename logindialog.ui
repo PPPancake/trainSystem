@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginDialog</class>
+ <widget class="QDialog" name="LoginDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255,255,255);</string>
+  </property>
+  <widget class="QPushButton" name="login_button">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>340</y>
+     <width>341</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑,Times,serif</family>
+     <pointsize>-1</pointsize>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border: none;
+    color: white;
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: rgb(0,83,135);
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 20px;
+}
+
+QPushButton:enabled:hover{
+        background-color: rgb(40,102,173);
+}
+QPushButton:enabled:pressed{
+        background-color: rgb(40,102,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>登        录</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="login_username">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>220</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="toolTipDuration">
+    <number>-6</number>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 20px;
+height: 25px;
+border: 1px solid rgb(217,217,217);
+background: white;
+padding-left:48px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="login_password">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>280</y>
+     <width>341</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+border-radius: 20px;
+height: 25px;
+border: 1px solid rgb(217,217,217);
+background: white;
+padding-left:48px;
+color:rgb(64,50,38);
+}
+QLineEdit:enabled:hover, QLineEdit:enabled:focus {
+  border: 1px solid rgb(0,81,135);
+}</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="login_signupbutton">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>400</y>
+     <width>341</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border: 1px solid rgb(0,83,135);
+    color: rgb(0,83,135);
+    font-family:Arial;
+    padding: 5px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+background-color: white;
+font-family:&quot;微软雅黑&quot;, Times, serif;
+border-radius: 20px;
+}
+
+QPushButton:enabled:pressed,QPushButton:enabled:hovor{
+border: 1px solid rgb(40,102,173);
+color: (40,102,173);
+}</string>
+   </property>
+   <property name="text">
+    <string>注    册 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>0</y>
+     <width>591</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/image/background.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(235,243,249);
+border-radius: 4px;
+padding:20px 30px;
+text-align:center;
+font-size: 20px;
+font: 14pt &quot;微软雅黑&quot;;
+cursor:pointer;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>230</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/image/user.png);</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>290</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/image/image/password.png);</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
