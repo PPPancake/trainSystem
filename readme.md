@@ -1,2 +1,2 @@
-//just a backup
-before use put "train.db" into correct path
+### just a backup
+### before use put "train.db" into correct path
